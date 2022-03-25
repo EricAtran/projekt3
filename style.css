@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* Navbar*/
+.sidonamn {
+  color: rgb(248, 0, 0);
+  margin-left: 10px;
+  font-size: 200%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  flex: 100%;
+  height: 89px;
+}
+.leftclass {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.leftlist:hover {
+  background-color: rgb(63, 60, 60);
+}
+.leftlist {
+  color: white;
+}
+
+#mhamburgarmeny {
+  margin-left: auto;
+  margin-right: 20px;
+  display: none;
+}
+#hamburgarmeny {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  #hamburgarmeny {
+    display: block;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .rightlist {
+    display: none;
+  }
+  .feedbackicon {
+    display: block;
+  }
+  #hval {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
