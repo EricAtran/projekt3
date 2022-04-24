@@ -23,7 +23,13 @@ ul {
   flex: 100%;
   align-items: center;
 }
-
+ul {
+  background-image: url("stars.jpg");
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 nav {
   display: flex;
   background-color: rgb(0, 0, 0);
@@ -71,7 +77,7 @@ font-size: 20px;
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   #hamburgarmeny {
     display: block;
     color: white;
@@ -85,3 +91,4 @@ font-size: 20px;
   }
 
 }
+/*main*/
