@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/4b39a549d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--nav-->
+    <header>
+      <nav>
+        <div class="leftclass">
+          <h1 class="sidonamn">FilmOGrejer</h1>
+          <ul>
+            <li><a class="leftlist" href="index.html">Hem</a></li>
+            <li><a class="leftlist" href="#Filmer">Filmer</a></li>
+            <li><a class="leftlist" href="#Contact">contact</a></li>
+            <li class="rightlist">
+              <a href="search.html"> <i class="fas fa-search fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
+        <i id="hamburgarmeny" class="fas fa-bars fa-4x"></i>
+      </nav>
+    </header>
+    <!-- Input row -->
+    <div class="searchbar">
+      <form class="searchbara">
+        <input type="text" id="txtSearch" placeholder="Search for movies" />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <!--Results-->
+    <h2>Results</h2>
+    <div id="searchresults"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

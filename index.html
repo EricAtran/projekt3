@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,10 +25,11 @@
         <div class="leftclass">
           <h1 class="sidonamn">FilmOGrejer</h1>
           <ul>
+            <li><a class="leftlist" href="#Hem">Hem</a></li>
             <li><a class="leftlist" href="#Filmer">Filmer</a></li>
-            <li><a class="leftlist" href="#Login">Login</a></li>
+            <li><a class="leftlist" href="contact.html">Contact</a></li>
             <li class="rightlist">
-              <a href=""> <i class="fas fa-search fa-2x"></i></a>
+              <a href="search.html"> <i class="fas fa-search fa-2x"></i></a>
             </li>
           </ul>
         </div>
@@ -36,10 +37,50 @@
       </nav>
     </header>
     <!--main-->
-    <main>
-      <div class="strange">
-        <img class="drstrange" src="strange.jpg" alt="strangepic" />
+    <main class="main">
+      <!--sidans början-->
+      <div class="sidansborjan">
+        <h2 class="strangetitle2">Dr Strange</h2>
+        <h2 class="strangetitle">
+          Doctor Strange in the Multiverse of Madness
+        </h2>
+        <div class="posterbild">
+          <img
+            class="alfonsposter"
+            src="bilder/alfonsposter.jpg"
+            alt="alfons"
+          />
+          <img class="jaezlatan" src="bilder/jaezlatan.jpg" alt="zlatan" />
+          <img class="sonic" src="bilder/sonic.jpg" alt="sonic" />
+        </div>
+      </div>
+      <!--Slide shows-->
+      <div class="gradientbg">
+        <div class="slide1"><h2 class="pabio">På BIO</h2></div>
+        <!--bild showerna-->
       </div>
     </main>
+    <!--Footer-->
+    <footer>
+      <div class="footersaker">
+        <h3>FilmerOGrejer</h3>
+        <p>Watch your favorite movies</p>
+        <ul class="sociala">
+          <li>
+            <a href="" target="popup"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="" target="popup"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="" target="popup"><i class="fa fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>copyright &copy;2022</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
