@@ -23,28 +23,33 @@
       <nav>
         <div class="leftclass">
           <h1 class="sidonamn">FilmOGrejer</h1>
-          <ul>
+          <ul class="navmenu">
             <li><a class="leftlist" href="index.html">Hem</a></li>
-            <li><a class="leftlist" href="#Filmer">Filmer</a></li>
-            <li><a class="leftlist" href="#Contact">contact</a></li>
-            <li class="rightlist">
-              <a href="search.html"> <i class="fas fa-search fa-2x"></i></a>
+            <li><a class="leftlist" href="contact.html">Contact</a></li>
+            <li class="leftlist" id="rightlist">
+              <a href="#"> <i class="fas fa-search fa-2x"></i></a>
             </li>
           </ul>
         </div>
-        <i id="hamburgarmeny" class="fas fa-bars fa-4x"></i>
+        <div class="hamburger">
+          <i id="hamburgarmeny" class="fas fa-bars fa-4x"></i>
+        </div>
       </nav>
     </header>
-    <!-- Input row -->
-    <div class="searchbar">
-      <form class="searchbara">
-        <input type="text" id="txtSearch" placeholder="Search for movies" />
-        <button type="submit">Search</button>
-      </form>
-    </div>
-    <!--Results-->
-    <h2>Results</h2>
-    <div id="searchresults"></div>
+    <main>
+      <!-- Input row -->
+      <section class="searchbar">
+        <form class="searchbara">
+          <input type="text" id="txtSearch" placeholder="Search for movies" />
+        </form>
+      </section>
+      <!--Results-->
+      <section class="results">
+        <h2>Results</h2>
+        <div id="searchresults"></div>
+      </section>
+    </main>
+
     <script src="script.js"></script>
   </body>
 </html>

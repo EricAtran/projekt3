@@ -1,3 +1,18 @@
+const hamburger = document.querySelector(".hamburger");
+const navmenu = document.querySelector(".navmenu");
+
+//hamburger
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navmenu.classList.toggle("active");
+});
+document.querySelectorAll(".leftlist").forEach((n) =>
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navmenu.classList.remove("active");
+  })
+);
+
 //search
 let searchText = document.getElementById("txtSearch");
 
@@ -44,7 +59,7 @@ function renderResults(res) {
     console.log(movie);
     let html = `<div class="item" >
       <h3 class="movietitle">${movie.title} </br>${movie.vote_average}/10</h3>
-      <img id="poster" src="https://image.tmdb.org/t/p/w154${movie.poster_path}">
+      <img id="poster" alt="${movie.title}" src="https://image.tmdb.org/t/p/w154${movie.poster_path}">
     </div>`;
 
     resultDiv.insertAdjacentHTML("beforeend", html);

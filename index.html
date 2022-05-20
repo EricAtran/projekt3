@@ -2,7 +2,15 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,22 +32,23 @@
       <nav>
         <div class="leftclass">
           <h1 class="sidonamn">FilmOGrejer</h1>
-          <ul>
-            <li><a class="leftlist" href="#Hem">Hem</a></li>
-            <li><a class="leftlist" href="#Filmer">Filmer</a></li>
+          <ul class="navmenu">
+            <li><a class="leftlist" href="index.html">Hem</a></li>
             <li><a class="leftlist" href="contact.html">Contact</a></li>
-            <li class="rightlist">
+            <li class="leftlist" id="rightlist">
               <a href="search.html"> <i class="fas fa-search fa-2x"></i></a>
             </li>
           </ul>
         </div>
-        <i id="hamburgarmeny" class="fas fa-bars fa-4x"></i>
+        <div class="hamburger">
+          <i id="hamburgarmeny" class="fas fa-bars fa-4x"></i>
+        </div>
       </nav>
     </header>
     <!--main-->
     <main class="main">
       <!--sidans början-->
-      <div class="sidansborjan">
+      <section class="sidansborjan">
         <h2 class="strangetitle2">Dr Strange</h2>
         <h2 class="strangetitle">
           Doctor Strange in the Multiverse of Madness
@@ -53,32 +62,45 @@
           <img class="jaezlatan" src="bilder/jaezlatan.jpg" alt="zlatan" />
           <img class="sonic" src="bilder/sonic.jpg" alt="sonic" />
         </div>
-      </div>
-      <!--Slide shows-->
-      <div class="gradientbg">
-        <div class="slide1"><h2 class="pabio">På BIO</h2></div>
-        <!--bild showerna-->
-      </div>
+      </section>
+      <!--på bio-->
     </main>
+    <div class="pabio"><h2>PÅ BIO</h2></div>
+    <div class="bild-container">
+      <div class="flex-div">
+        <img class="bilden" src="bilder/achiara.jpg" alt="bilden" />
+      </div>
+      <div class="flex-div">
+        <img class="bilden" src="bilder/lostcity.jpg" alt="bilden" />
+      </div>
+      <div class="flex-div">
+        <img class="bilden" src="bilder/northman.jpg" alt="bilden" />
+      </div>
+      <div class="flex-div">
+        <img class="bilden" src="bilder/jaezlatan.jpg" alt="bilden" />
+      </div>
+    </div>
     <!--Footer-->
     <footer>
-      <div class="footersaker">
-        <h3>FilmerOGrejer</h3>
-        <p>Watch your favorite movies</p>
-        <ul class="sociala">
-          <li>
-            <a href="" target="popup"><i class="fa fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="" target="popup"><i class="fa fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="" target="popup"><i class="fa fa-youtube"></i></a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-bottom">
-        <p>copyright &copy;2022</p>
+      <div class="footers">
+        <div class="footersaker">
+          <h3>FilmerOGrejer</h3>
+          <p>Watch your favorite movies</p>
+          <ul class="sociala">
+            <li>
+              <a href="" target="popup"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="" target="popup"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="" target="popup"><i class="fa fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>copyright &copy;2022</p>
+        </div>
       </div>
     </footer>
     <script src="script.js"></script>

@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script
-      src="https://kit.fontawesome.com/4b39a549d2.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/4b39a549d2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+</head>
+
+<body>
     <header>
-      <nav>
-        <div class="leftclass">
-          <h1 class="sidonamn">FilmOGrejer</h1>
-          <ul>
-            <li><a class="leftlist" href="index.html">Hem</a></li>
-            <li><a class="leftlist" href="#Filmer">Filmer</a></li>
-            <li><a class="leftlist" href="Contact.html">Contact</a></li>
-            <li class="rightlist">
-              <a href="search.html"> <i class="fas fa-search fa-2x"></i></a>
-            </li>
-          </ul>
-        </div>
-        <i id="hamburgarmeny" class="fas fa-bars fa-4x"></i>
-      </nav>
+        <nav>
+            <div class="leftclass">
+                <h1 class="sidonamn">FilmOGrejer</h1>
+                <ul class="navmenu">
+                    <li><a class="leftlist" href="index.html">Hem</a></li>
+                    <li><a class="leftlist" href="contact.html">Contact</a></li>
+                    <li class="leftlist" id="rightlist"> <a href="search.html"> <i class="fas fa-search fa-2x"></i></a> </li>
+                </ul>
+            </div>
+            <div class="hamburger"> <i id="hamburgarmeny" class="fas fa-bars fa-4x"></i> </div>
+        </nav>
     </header>
-  </body>
+    <main>
+        <!--wrapper-->
+        <div class="wrapper2">
+            <!--form-->
+            <h2 class="contacth2">Contact Form</h2>
+            <div class="container">
+                <form action="/action_page.php"> <label for="fname">First Name</label> <input type="text" id="fname" name="firstname" placeholder="Your name.." /> <label for="lname">Last Name</label> <input type="text" id="lname" name="lastname" placeholder="your surname /lastname.." /> <label for="location">Location</label> <select id="location" name="location">
+                        <option value="Sweden">Sweden</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Denmark">Denmark</option>
+                    </select> <label for="Info">Tell us</label> <textarea id="Info" name="Info" placeholder="Write your text here.." style="height: 200px"></textarea> <input type="submit" value="Submit" /> </form>
+            </div>
+            <div class="karta"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.5772564619508!2d18.0615320160768!3d59.44012488169772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9b937e97af13%3A0xef984bf2bc386cb7!2s%C3%85va%20gymnasium!5e0!3m2!1ssv!2sse!4v1653031861298!5m2!1ssv!2sse" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+    </main>
+    <footer>
+        <div class="footersaker">
+            <h3>FilmerOGrejer</h3>
+            <p>Watch your favorite movies</p>
+            <ul class="sociala">
+                <li> <a href="" target="popup"><i class="fa fa-facebook"></i></a> </li>
+                <li> <a href="" target="popup"><i class="fa fa-twitter"></i></a> </li>
+                <li> <a href="" target="popup"><i class="fa fa-youtube"></i></a> </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
 </html>
